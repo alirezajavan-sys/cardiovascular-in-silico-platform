@@ -1,0 +1,18 @@
+# Differential expression analysis input (Methods 2.6).
+# case_samples / control_samples are GEO GSM accession ids and must be
+# filled in from the specific GSE28829 / GSE41571 sample annotations
+# (TODO: confirm from the GEO series' own sample metadata -- not
+# reproduced here since it is series-specific and publicly available at
+# the URLs in configs/data_sources.yaml).
+
+geo_series: [GSE28829, GSE41571]
+
+case_samples:
+  - GSMxxxxxxx  # TODO: fill from GEO series sample annotation (heart-failure cases)
+
+control_samples:
+  - GSMyyyyyyy  # TODO: fill from GEO series sample annotation (non-failing controls)
+
+padj_threshold: 0.05
+log2fc_threshold: 1.0
+fdr_method: fdr_bh

@@ -1,0 +1,44 @@
+# Data source paths and identifiers referenced throughout the pipeline.
+# No data files are bundled with this repository -- see README "Data access".
+
+chembl:
+  version: "ChEMBL 36"
+  local_path: data_raw/chembl36.sdf
+  license: "CC BY-SA 4.0"
+  url: https://www.ebi.ac.uk/chembl/
+
+drugbank:
+  version: 6
+  local_path: data_raw/drugbank_full.sdf
+  license: "academic license required"
+  url: https://go.drugbank.com/
+
+cardiosafe:
+  local_path: data_raw/cardiosafe/
+  license: MIT
+  url: https://github.com/AppliedScientific/CardioSafe-benchmark
+
+unihergdb:
+  local_path: data_raw/unihergdb/
+  note: "see manuscript reference 16 for citation"
+
+mimic_iv:
+  version: "2.2"
+  local_path: data_raw/mimic-iv-2.2/
+  license: "restricted; PhysioNet CITI training + DUA required"
+  url: https://physionet.org/
+
+geo_series:
+  - id: GSE28829
+    local_path: data_raw/geo/GSE28829/
+  - id: GSE41571
+    local_path: data_raw/geo/GSE41571/
+
+string_db:
+  local_path: data_raw/string/9606.protein.links.v12.0.txt
+  url: https://string-db.org/
+
+disgenet:
+  local_path: data_raw/disgenet/all_gene_disease_associations.tsv
+  license: "account required for full download"
+  url: https://www.disgenet.org/

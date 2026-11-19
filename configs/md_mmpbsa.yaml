@@ -1,0 +1,9 @@
+# MD / MM-PBSA automation (Methods 2.7, Table 1).
+# Force field: CHARMM36m. See src/md_mmpbsa/generate_run_scripts.py module
+# docstring for which parameters are manuscript-confirmed vs. reference
+# defaults awaiting confirmation from original run logs.
+
+production_ns: 100   # TODO: confirm from original run logs (manuscript reports
+                      # single-replicate MM-PBSA; production length not separately stated)
+force_field: charmm36m
+water_model: tip3p    # TODO: confirm from original run logs

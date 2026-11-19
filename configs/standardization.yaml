@@ -1,0 +1,9 @@
+# Molecular standardization parameters (Methods 2.1). Passed to
+# src.data.standardize.StandardizationConfig.
+
+mw_min: 150.0
+mw_max: 900.0
+max_ro5_violations: 1
+apply_pains_filter: true
+ecfp_radius: 2
+ecfp_nbits: 2048

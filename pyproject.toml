@@ -1,0 +1,14 @@
+[project]
+name = "cardiovascular-in-silico-platform"
+version = "0.1.0"
+description = "Reference implementation of the four-module in silico platform for cardiovascular drug discovery (Javan et al., Scientific Reports)."
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

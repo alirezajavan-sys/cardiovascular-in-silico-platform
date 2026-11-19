@@ -1,0 +1,23 @@
+name: cvd-in-silico
+channels:
+  - conda-forge
+  - pytorch
+  - pyg
+dependencies:
+  - python=3.11
+  - rdkit=2024.09.1
+  - pandas
+  - numpy
+  - scipy
+  - scikit-learn
+  - networkx
+  - python-louvain
+  - matplotlib
+  - pyyaml
+  - pyarrow
+  - pip
+  - pip:
+      - torch==2.3.0
+      - torch-geometric==2.5.0
+      - lifelines
+      - gmx_MMPBSA

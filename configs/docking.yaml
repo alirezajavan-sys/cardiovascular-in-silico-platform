@@ -1,0 +1,26 @@
+# AutoDock Vina docking parameters (Methods 2.3).
+
+exhaustiveness: 8
+num_modes: 9
+energy_range: 3.0
+seed: 42               # TODO: confirm from original run logs
+top_n_per_target: 200
+
+# Per-target receptor PDBQT file (from src.screening.prepare_targets) and
+# grid-box definition. center/box_size are placeholders (TODO): compute
+# from the co-crystallized ligand via
+# src.screening.prepare_targets.grid_box_from_ligand, or confirm from the
+# original run logs for apo structures.
+targets:
+  - name: SGLT2
+    pdbqt: SGLT2.pdbqt
+    center: [0.0, 0.0, 0.0]     # TODO: confirm from original run logs
+    box_size: [25.0, 25.0, 25.0]
+  - name: ACE
+    pdbqt: ACE.pdbqt
+    center: [0.0, 0.0, 0.0]     # TODO: confirm from original run logs
+    box_size: [25.0, 25.0, 25.0]
+  - name: NEP
+    pdbqt: NEP.pdbqt
+    center: [0.0, 0.0, 0.0]     # TODO: confirm from original run logs
+    box_size: [25.0, 25.0, 25.0]

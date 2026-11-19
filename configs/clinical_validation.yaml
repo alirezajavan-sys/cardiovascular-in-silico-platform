@@ -1,0 +1,19 @@
+# Retrospective MIMIC-IV clinical cross-reference (Methods 2.8, Tables 6-7).
+# Drug formulary strings and ICD codes below are placeholders and must be
+# confirmed against the manuscript's original cohort-definition query
+# (TODO: confirm from original run logs) before use -- see the module
+# docstring in src/clinical_validation/psm_cox.py.
+
+target_drug_formulary:
+  - "TODO: confirm exact MIMIC-IV prescriptions.drug formulary string(s)"
+
+hf_icd_codes:
+  - "I50"    # ICD-10 heart failure, unspecified -- TODO: confirm full code list used
+
+duration_col: followup_days
+event_col: mortality_event
+
+caliper: 0.2
+match_ratio: 1
+covariates: [age, sex, charlson_comorbidity_index, baseline_egfr, baseline_lvef]
+alpha: 0.05

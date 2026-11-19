@@ -1,0 +1,4 @@
+# Multilayer network construction and hub-gene ranking (Methods 2.6).
+
+string_confidence_threshold: 0.7   # STRING "high confidence" cutoff (0-1 scale)
+top_n_hubs: 25

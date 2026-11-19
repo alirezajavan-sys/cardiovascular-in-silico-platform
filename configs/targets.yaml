@@ -1,0 +1,19 @@
+# Target structure preparation (Methods 2.2).
+# PDB ids below are placeholders (TODO): confirm the exact deposited
+# structures used in the original study from the manuscript's Methods /
+# supplementary materials, or substitute an equivalent up-to-date
+# high-resolution structure for each target.
+
+targets:
+  - name: SGLT2
+    pdb_id: "7VSI"   # TODO: confirm from original run logs / supplementary materials
+    chain: A
+    ligand_resname: null
+  - name: ACE
+    pdb_id: "1O86"   # TODO: confirm from original run logs / supplementary materials
+    chain: A
+    ligand_resname: "IPR"
+  - name: NEP
+    pdb_id: "1DMT"   # TODO: confirm from original run logs / supplementary materials
+    chain: A
+    ligand_resname: null

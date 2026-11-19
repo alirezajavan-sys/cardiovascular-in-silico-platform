@@ -1,0 +1,14 @@
+# Dual-target generative design (Methods 2.5). Reward-function weights are
+# fixed in src.generative_design.generate (reported exactly in the
+# manuscript) and are not repeated here. GA search hyperparameters below
+# are a documented reference configuration -- see the module docstring in
+# src/generative_design/generate.py for why these are not a reproduction
+# of undocumented original settings.
+
+population_size: 200     # TODO: confirm from original run logs
+n_generations: 100        # TODO: confirm from original run logs
+mutation_rate: 0.15       # TODO: confirm from original run logs
+elitism_fraction: 0.10
+seed: 42                  # TODO: confirm from original run logs
+
+seed_source: data_processed/screening_hits.csv  # Module A hits used as GA seed population

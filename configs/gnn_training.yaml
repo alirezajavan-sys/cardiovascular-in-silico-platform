@@ -1,0 +1,18 @@
+# Multi-task cardiotoxicity GNN training (Methods 2.4).
+# Architecture constants (hidden_dim, n_layers, dropout) are fixed in
+# src.toxicity_gnn.model and are not repeated here since the manuscript
+# reports them as part of the model definition, not a tunable run config.
+
+epochs: 200
+batch_size: 64
+learning_rate: 0.001
+weight_decay: 0.00001
+lr_patience: 10          # TODO: confirm from original run logs
+early_stop_patience: 20  # TODO: confirm from original run logs
+lambda_focal: 1.0
+lambda_mse: 0.5
+focal_gamma: 2.0
+val_split: 0.10
+test_split: 0.10
+seed: 42                 # TODO: confirm from original run logs
+checkpoint_dir: checkpoints
